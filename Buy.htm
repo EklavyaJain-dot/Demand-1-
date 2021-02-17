@@ -1,0 +1,97 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Now</title>
+    <link rel="stylesheet" href="style.1.css">
+</head>
+<body>
+
+<img src="background.jpg" width="100%" height="100%">
+
+<div class="container1">
+
+<form onsubmit="return getorderdata();">
+
+    <center>
+<h1 style="color: white;"> Buy Now </h1>
+</center>
+
+<h1 style="color: white;">Name</h1>
+
+<input type="text" id="Name" placeholder="Name" style="width: 400px; height: 50px;" autocomplete="off ">
+
+
+<h1 style="color: white;">Email Address</h1>
+
+<input type="email" id="email" style="width: 400px; height: 50px;" placeholder="Email Id" autocomplete="off">
+
+<h1 style="color: white;">Product Name</h1>
+
+<input type="text" id="productname" style="width: 400px;height: 50px;" placeholder="Product Name">
+
+<input type="submit" id="submit" class="submit">
+
+<h1 id="text"></h1>
+
+</form> 
+
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-database.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDPYzWAamXRduoKKDpcrrtvMEXEnVkVilA",
+    authDomain: "demand-getdataorder.firebaseapp.com",
+    projectId: "demand-getdataorder",
+    storageBucket: "demand-getdataorder.appspot.com",
+    messagingSenderId: "621236258813",
+    appId: "1:621236258813:web:f7daafa511f911d1913b94"
+  };
+  
+  firebase.initializeApp(firebaseConfig);
+
+function getorderdata(){
+
+const name = document.getElementById("Name").value;
+const email = document.getElementById("email").value
+const productname = document.getElementById("productname").value
+
+const text = document.getElementById("text").innerHTML = "Thanks, Your order will be placed at your door in just 2 to 3 days";
+
+
+firebase.database().ref("messages").push().set({
+
+"Name":name,
+"Email":email,
+"Product Name":productname,
+
+})
+return false;
+}
+
+</script>
+
+</body>
+</script>
+
+</body>
+</script>
+
+</body>
+</script>
+
+</body>
+</script>
+
+</body>
+</script>
+
+</body>
+</script>
+
+</body>
+</html>

@@ -1,0 +1,83 @@
+ <html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    
+<div class="main">
+
+<a href="login.htm"><center><h1 style="color: orange;">Sign Up</h1></center></a>
+
+<hr>
+
+<form onsubmit="return passthevalue();">
+<ul type="circle">
+
+    <h2 id="username"><li>Username</li></h2>
+
+<input style="width: 300px; height:50px; border-radius:20px" type="text" id="Name" placeholder="Username"  autocomplete="off">
+
+<h2>
+    Password
+</h2>
+
+<input type="password" style="width: 300px; height:50px; border-radius:20px" id="pass" placeholder="Password">
+
+<br><br><br><br><br><br><br><br><br>
+</ul>
+</div>
+
+    <input type="submit" class="signin" id="signin">
+
+</form>
+
+<a href="index.htm">
+<button class="nextpage">
+    Go to the Main Page 
+</button>
+</a>
+
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+
+<script>
+  var firebaseConfig = {
+    apiKey: "AIzaSyDzCT9gvum0EuPYVkpLE0eMb3rvMp95IXQ",
+    authDomain: "login---demand.firebaseapp.com",
+    projectId: "login---demand",
+    storageBucket: "login---demand.appspot.com",
+    messagingSenderId: "923901884111",
+    appId: "1:923901884111:web:71da94976473146f4f69ba"
+  };
+
+  var name = document.getElementById('Name').value;
+  var pass = document.getElementById('pass').value;
+  var signin = document.getElementById('signin').value;
+
+  if(name === null){
+   signin.disabled = true;
+  }
+
+  firebase.initializeApp(firebaseConfig);
+
+  function passthevalue(){
+
+    var name = document.getElementById('Name').value;
+    var pass = document.getElementById('pass').value;
+
+firebase.database().ref("login").push().set({
+    "Username" : name,
+    "Password" : pass
+})
+
+return false;
+  }
+
+</script>
+
+</body>
+</html>

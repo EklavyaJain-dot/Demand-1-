@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="style.1.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+
+</head>
+<body>
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-database.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyA62r9t6aJvUaeULm2es7EFtNPvd2egGaI",
+    authDomain: "demand-bf6a6.firebaseapp.com",
+    projectId: "demand-bf6a6",
+    storageBucket: "demand-bf6a6.appspot.com",
+    messagingSenderId: "629587873878",
+    appId: "1:629587873878:web:aa10e6c679f8242e76abf7"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+
+  function getMessage(){
+
+    var name = document.getElementById('Name').value;
+    var email = document.getElementById('email').value;
+    var feedback = document.getElementById('feed').value;
+
+     firebase.database().ref("email").push().set({
+         "Name": name,
+         "Email": email,
+         "Feedback":feedback
+     })
+
+    return false;
+  }
+
+</script>
+
+<center>
+    <div class="form">
+    
+<form onsubmit="return getMessage();">
+    <h1>Enter your name here</h1>
+    <input type="text" id="Name" class="name" placeholder="Enter your Name" autocomplete="off">
+
+    <h1>Enter your Email Address.</h1>
+    <input type="email" id="email" class="email" placeholder="Enter your Email Id" autocomplete="off">
+
+    <h1>Share your experience with us.</h1>
+    <textarea id="feed" class="feed" placeholder="Share your experience"></textarea>
+
+<br><br>
+
+    <input type="submit" id="submit" class="submit">
+
+</form>
+</div>
+</center>
+
+
+</body>
+</html>

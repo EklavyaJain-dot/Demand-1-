@@ -1,0 +1,308 @@
+body{
+    margin:10px;
+    overflow-x: hidden;
+    background-color: blueviolet;
+}
+
+a{
+    text-decoration: none;
+    color:black
+}
+
+.header{
+    width: auto;
+    background: #5f9ea0;
+    height:100px;
+}
+
+.logo{
+    width: 150px;
+    border: 5px solid white;
+    position: relative;
+    top:15px;
+    left:20px;
+    padding: 10px;
+    font-family: 'Poiret One', cursive
+}
+
+.home{
+    position: relative;
+    bottom: 70px;
+    left:830px
+}
+
+.aboutus{
+    position: relative;
+    bottom:110px;
+    left:900px
+}
+
+.login{
+    position: relative;
+    bottom: 150px;
+    left:600px;
+    width: 100px;
+    height: 50px;
+    background-color: pink;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.login:hover{
+    transform: translateX(1.2);
+    background-color: rgb(255, 140, 159);
+}
+
+.headerline{
+    position: relative;
+    bottom:200px;
+    left:250px;
+    color:rgb(255, 208, 0);
+    font-family: 'Italiana', serif;
+}
+
+.card1{
+    margin-top: 60px;
+    margin-left: 50px;
+    width: 400px;
+    height: 300px;
+    background-color: rgb(255, 145, 0);
+}
+
+.card1 img{
+    position: relative;
+    top:50px;
+    left: 100px;
+}
+
+
+.card2{
+    position: relative;
+    left:580px;
+    bottom: 300px;
+    width: 400px;
+    height: 300px;
+    background-color: aqua;    
+}
+
+
+.card3{
+    position: relative;
+    left:50px;
+    bottom: 20px;
+    width: 400px;
+    height: 320px;
+    background-color: cadetblue;    
+}
+
+.card4{
+    position: relative;
+    left:550px;
+    bottom: 330px;
+    width: 400px;
+    height: 320px;
+    background-color: rgb(0, 255, 64);    
+}
+
+.card5{
+    position: relative;
+    left:50px;
+    bottom: 250px;
+    width: 400px;
+    height: 320px;
+    background-color: rgb(0, 255, 64);    
+}
+
+.card6{
+    position: relative;
+    left:550px;
+    bottom: 570px;
+    width: 400px;
+    height: 320px;
+    background-color: rgb(0, 255, 64);    
+}
+
+.texhimg{
+    position: relative;
+    top:30px;
+    left: 80px;
+}
+
+.oneheading{
+position: relative;
+top:50px;
+}
+ 
+.clothimg{
+    position: relative;
+    top:30px;
+    right: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 0, 0); 
+  }
+
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(0, 0, 0); 
+    border-radius: 40px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgb(0, 0, 0); 
+    border-radius: 10px;
+  }
+
+  .main{
+      width: 400px;
+      height: 600px;
+      background-color: indianred;
+      position: absolute;
+      left:300px;
+      border-radius: 50px;
+  }
+
+  .signin{
+ width: 200px;
+height: 50px;
+background-color: chartreuse;
+border-radius: 2px;
+position: relative;
+left:380px;
+top:400px
+  }
+
+  .nextpage{
+    width: 200px;
+    height: 50px;
+    background-color: cadetblue;
+    border-radius: 20px;
+    position: relative;
+    left:250px;
+    top:500px
+  }
+
+  .footer{
+      position: relative;
+      bottom:500px;
+      background-color: coral;
+      width:auto;
+      height: 200px;
+  }      
+  .login1{
+      width:200px;
+      height: 100px;
+      background: pink; 
+      border-radius: 20px;
+      position: relative;
+      left:400px;
+      top:100px;
+      font-size: 60px;
+      transform: translateY();
+  }
+
+  .sale:hover{
+    background-color: aqua;
+  }
+
+  
+
+  .img01{
+      border: 10px solid rgb(0, 51, 128);
+      border-radius: 30px;
+      height: 300px;
+      padding-bottom: 50px;
+      padding-left: 0px;
+      width: 400px;
+  }
+
+  .img02{
+      border: 10px solid rgb(0, 51, 128);
+      border-radius: 30px;
+      height: 300px;
+      padding-bottom: 50px;
+      padding-left: 0px;
+      width: 400px;
+  }
+
+  .img03{
+    border: 10px solid rgb(0, 51, 128);
+    border-radius: 20px;
+    height: 300px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    width: 400px;
+}
+
+.img04{
+    border: 10px solid rgb(0, 51, 128);
+    border-radius: 20px;
+    height: 300px;
+    padding-bottom: 50px;
+    padding-left: 0px;
+    width: 400px;
+}
+.containerfood{
+    padding: 20px;
+}
+
+  .item1{
+      border: 5px solid blue;
+      padding:2px;
+      width: 150px;
+      padding-bottom: 30px;
+    }
+
+    .item2{
+        border: 5px solid blue;
+        padding:2px;
+        width: 150px;
+        position: relative;
+        left:200px;
+        bottom: 260px;
+        padding-bottom: 30px;
+}
+
+.item3{
+    border: 5px solid blue;
+    padding:2px;
+    width: 150px;
+    position: relative;
+    left:400px;
+    bottom: 520px;
+    padding-bottom: 30px;
+}
+
+.item4{
+    border: 5px solid blue;
+    padding:2px;
+    width: 150px;
+    position: relative;
+    left:600px;
+    bottom: 790px;
+    padding-bottom: 30px;
+}
+
+.chatbot{
+    border-radius: 100px;
+    background-color: aqua;
+    width: 100px;
+    height: 50px;
+    position: relative;
+    bottom: 200px;
+    left:470px;
+    position: fixed;
+    z-index: 4;
+}
+
+.Feedback-button{
+    width: 200px;
+    height: 50px;
+    position: relative;
+    bottom: 60px;
+    background-color: rgb(0, 255, 0);
+}
